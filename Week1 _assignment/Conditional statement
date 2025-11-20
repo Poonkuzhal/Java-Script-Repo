@@ -1,0 +1,40 @@
+
+function launchBrowser(browserName)
+{
+if (browserName==="chrome")
+{
+console.log("supported browser is chrome")
+}
+
+else if (browserName==="firefox")
+{
+    console.log("supported browser is firefox")
+}
+else
+{
+    console.log("Browser NOT supported")
+}
+
+}
+launchBrowser("chrome")
+
+
+function runTests(testType)
+{
+    switch (testType) {
+        case "smoke":
+            console.log("Test type is smoke")
+            break;
+        case "sanity":
+            console.log("Test type is sanity")
+            break;
+         case "regression":
+            console.log("Test type is regression")
+            break;   
+        default:
+            console.log("Test type is default")
+            break;
+    }
+}
+
+runTests("smoke")
